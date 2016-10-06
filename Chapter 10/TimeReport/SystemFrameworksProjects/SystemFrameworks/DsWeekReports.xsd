@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsWeekReports" targetNamespace="http://tempuri.org/dsWeekReports.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsWeekReports.xsd" xmlns:mstns="http://tempuri.org/dsWeekReports.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsWeekReports" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AvailableWeekReports">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="WeekReportID" type="xs:long" />
+							<xs:element name="StartDate" type="xs:dateTime" />
+							<xs:element name="EndDate" type="xs:dateTime" />
+							<xs:element name="WeekNumber" type="xs:string" />
+							<xs:element name="ExpectedHours" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="dsWeekReportsKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AvailableWeekReports" />
+			<xs:field xpath="mstns:WeekReportID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

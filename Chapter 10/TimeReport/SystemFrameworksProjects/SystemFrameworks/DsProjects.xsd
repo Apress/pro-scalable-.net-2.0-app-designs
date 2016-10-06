@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsProjects" targetNamespace="http://tempuri.org/dsProjects.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"
+    xmlns="http://tempuri.org/dsProjects.xsd" xmlns:mstns="http://tempuri.org/dsProjects.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsProjects" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Projects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="UserProjectID" codegen:typedName="UserProjectID" type="xs:long" />
+							<xs:element name="ProjectID" codegen:typedName="ProjectID" type="xs:long" />
+							<xs:element name="RootProjectID" codegen:typedName="RootProjectID" type="xs:long" />
+							<xs:element name="UserID" codegen:typedName="UserID" type="xs:long" />
+							<xs:element name="ProjectName" codegen:typedName="ProjectName" type="xs:string" />
+							<xs:element name="ProjectDesription" codegen:typedName="Description" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

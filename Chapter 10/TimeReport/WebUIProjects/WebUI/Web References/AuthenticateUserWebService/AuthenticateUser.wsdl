@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://tempuri.org/WebService/AuthenticateUser" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/WebService/AuthenticateUser" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/WebService/AuthenticateUser">
+      <s:element name="GetUserGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserGroupsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="GetUserGroupsSoapIn">
+    <part name="parameters" element="s0:GetUserGroups" />
+  </message>
+  <message name="GetUserGroupsSoapOut">
+    <part name="parameters" element="s0:GetUserGroupsResponse" />
+  </message>
+  <portType name="AuthenticateUserSoap">
+    <operation name="GetUserGroups">
+      <documentation>Get a users's groups</documentation>
+      <input message="s0:GetUserGroupsSoapIn" />
+      <output message="s0:GetUserGroupsSoapOut" />
+    </operation>
+  </portType>
+  <binding name="AuthenticateUserSoap" type="s0:AuthenticateUserSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetUserGroups">
+      <soap:operation soapAction="http://tempuri.org/WebService/AuthenticateUser/GetUserGroups" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="AuthenticateUser">
+    <port name="AuthenticateUserSoap" binding="s0:AuthenticateUserSoap">
+      <soap:address location="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/AuthenticateUser.asmx" />
+    </port>
+  </service>
+</definitions>

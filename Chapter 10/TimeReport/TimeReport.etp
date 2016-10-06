@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<EFPROJECT>
+    <GENERAL>
+        <BANNER>Microsoft Visual Studio Distributed Application Template File</BANNER>
+        <VERSION>1.00</VERSION>
+        <SourceControlSettings>
+            <ProjectName>"$/TimeReport", LKDAAAAA</ProjectName>
+            <AuxPath></AuxPath>
+            <LocalPath>..</LocalPath>
+            <Provider>MSSCCI:Microsoft Visual SourceSafe</Provider>
+        </SourceControlSettings>
+        <Views>
+            <ProjectExplorer>
+                <File>BusinessFacadeProjects\BusinessFacadeProjects.etp</File>
+                <File>SystemFrameworksProjects\SystemFrameworksProjects.etp</File>
+                <File>BusinessRulesProjects\BusinessRulesProjects.etp</File>
+                <File>DataAccessProjects\DataAccessProjects.etp</File>
+                <File>WebServiceProjects\WebServiceProjects.etp</File>
+                <File>WinUIProjects\WinUIProjects.etp</File>
+                <File>WebUIProjects\WebUIProjects.etp</File>
+            </ProjectExplorer>
+        </Views>
+        <REFERENCES>
+            <Reference>
+                <FILE>BusinessFacadeProjects\BusinessFacadeProjects.etp</FILE>
+                <GUIDPROJECTID>{32114F85-F4FE-4EEF-9338-893B25780423}</GUIDPROJECTID>
+            </Reference>
+            <Reference>
+                <FILE>SystemFrameworksProjects\SystemFrameworksProjects.etp</FILE>
+                <GUIDPROJECTID>{EB3966F3-B5F3-41C3-BD0F-8B58AFBBE7AC}</GUIDPROJECTID>
+            </Reference>
+            <Reference>
+                <FILE>BusinessRulesProjects\BusinessRulesProjects.etp</FILE>
+                <GUIDPROJECTID>{CB70344D-4A43-4EB9-B818-30CA47891AE7}</GUIDPROJECTID>
+            </Reference>
+            <Reference>
+                <FILE>DataAccessProjects\DataAccessProjects.etp</FILE>
+                <GUIDPROJECTID>{034DAECB-DD2F-453F-B41B-D6DB1D3120BE}</GUIDPROJECTID>
+            </Reference>
+            <Reference>
+                <FILE>WebServiceProjects\WebServiceProjects.etp</FILE>
+                <GUIDPROJECTID>{0557E25E-8617-4CD0-904F-6B2B83281288}</GUIDPROJECTID>
+            </Reference>
+            <Reference>
+                <FILE>WinUIProjects\WinUIProjects.etp</FILE>
+                <GUIDPROJECTID>{D0910BBA-B202-4640-9929-97083EC52BDD}</GUIDPROJECTID>
+            </Reference>
+            <Reference>
+                <FILE>WebUIProjects\WebUIProjects.etp</FILE>
+                <GUIDPROJECTID>{32A6BFD3-17C1-48D7-82B5-FF9CA8EEF5C4}</GUIDPROJECTID>
+            </Reference>
+        </REFERENCES>
+    </GENERAL>
+    <GLOBALS>
+        <GLOBALENTRY>
+            <NAME>TDLFILE</NAME>
+            <VALUE>DAP.tdl</VALUE>
+        </GLOBALENTRY>
+        <GLOBALENTRY>
+            <NAME>TDLELEMENTTYPE</NAME>
+            <VALUE>DistributedApplicationFull</VALUE>
+        </GLOBALENTRY>
+    </GLOBALS>
+</EFPROJECT>

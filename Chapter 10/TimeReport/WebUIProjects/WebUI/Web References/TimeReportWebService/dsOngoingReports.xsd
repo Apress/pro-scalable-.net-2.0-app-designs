@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="http://tempuri.org/dsOngoingReports.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://tempuri.org/dsOngoingReports.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/dsOngoingReports.xsd" id="dsOngoingReports" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" name="dsOngoingReports">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="OngoingReports">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WeekReportID" type="xs:long" />
+              <xs:element name="StartDate" type="xs:dateTime" />
+              <xs:element name="EndDate" type="xs:dateTime" />
+              <xs:element name="WeekNumber" type="xs:string" />
+              <xs:element name="ExpectedHours" type="xs:int" />
+              <xs:element name="UserReportsID" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsOrders" targetNamespace="http://tempuri.org/dsOrders.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsOrders.xsd" xmlns:mstns="http://tempuri.org/dsOrders.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsOrders" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="OrderHeader">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OrderID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ShippedDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ShipVia" type="xs:int" minOccurs="0" />
+							<xs:element name="Freight" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ShipName" type="xs:string" minOccurs="0" />
+							<xs:element name="ShipCountry" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="OrderDetails">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OrderID" type="xs:int" />
+							<xs:element name="ProductID" type="xs:int" />
+							<xs:element name="UnitPrice" type="xs:decimal" />
+							<xs:element name="Quantity" type="xs:short" />
+							<xs:element name="Discount" type="xs:float" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="dsOrdersKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:OrderDetails" />
+			<xs:field xpath="mstns:OrderID" />
+			<xs:field xpath="mstns:ProductID" />
+		</xs:unique>
+		<xs:key name="dsOrdersKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:OrderHeader" />
+			<xs:field xpath="mstns:OrderID" />
+		</xs:key>
+		<xs:keyref name="OrderHeaderOrderDetails" refer="dsOrdersKey2">
+			<xs:selector xpath=".//mstns:OrderDetails" />
+			<xs:field xpath="mstns:OrderID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,137 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FE3BBBB6-72D5-11D2-9ACE-00C04F79A2A4}") = "TimeReport", "TimeReport\TimeReport.etp", "{A2CC2E71-5C73-41E2-9C95-F93547E3A56D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TimeReportWebSetup", "TimeReportWebSetup\TimeReportWebSetup.vdproj", "{D7CBD529-B004-45A2-A6C5-2C2391499224}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 17
+		SccProjectName0 = \u0022$/TimeReport\u0022,\u0020LKDAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+		SolutionUniqueID = {A9AE2776-B794-4CD6-94DE-F90A45DB6064}
+		SccProjectUniqueName1 = TimeReport\\BusinessFacadeProjects\\BusinessFacade\\BusinessFacade.vbproj
+		SccProjectTopLevelParentUniqueName1 = TimeReport\\TimeReport.etp
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = TimeReport\\BusinessFacadeProjects\\BusinessFacade\\
+		SccProjectUniqueName2 = TimeReport\\BusinessFacadeProjects\\BusinessFacadeProjects.etp
+		SccProjectTopLevelParentUniqueName2 = TimeReport\\TimeReport.etp
+		SccLocalPath2 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = TimeReport\\BusinessFacadeProjects\\
+		SccProjectUniqueName3 = TimeReport\\BusinessRulesProjects\\BusinessRules\\BusinessRules.vbproj
+		SccProjectTopLevelParentUniqueName3 = TimeReport\\TimeReport.etp
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection3 = TimeReport\\BusinessRulesProjects\\BusinessRules\\
+		SccProjectUniqueName4 = TimeReport\\BusinessRulesProjects\\BusinessRulesProjects.etp
+		SccProjectTopLevelParentUniqueName4 = TimeReport\\TimeReport.etp
+		SccLocalPath4 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection4 = TimeReport\\BusinessRulesProjects\\
+		SccProjectUniqueName5 = TimeReport\\DataAccessProjects\\DataAccess\\DataAccess.vbproj
+		SccProjectTopLevelParentUniqueName5 = TimeReport\\TimeReport.etp
+		SccLocalPath5 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection5 = TimeReport\\DataAccessProjects\\DataAccess\\
+		SccProjectUniqueName6 = TimeReport\\DataAccessProjects\\DataAccessProjects.etp
+		SccProjectTopLevelParentUniqueName6 = TimeReport\\TimeReport.etp
+		SccLocalPath6 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection6 = TimeReport\\DataAccessProjects\\
+		SccProjectUniqueName7 = TimeReport\\SystemFrameworksProjects\\SystemFrameworks\\SystemFrameworks.vbproj
+		SccProjectTopLevelParentUniqueName7 = TimeReport\\TimeReport.etp
+		SccLocalPath7 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection7 = TimeReport\\SystemFrameworksProjects\\SystemFrameworks\\
+		SccProjectUniqueName8 = TimeReport\\SystemFrameworksProjects\\SystemFrameworksProjects.etp
+		SccProjectTopLevelParentUniqueName8 = TimeReport\\TimeReport.etp
+		SccLocalPath8 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection8 = TimeReport\\SystemFrameworksProjects\\
+		SccProjectUniqueName9 = TimeReport\\TimeReport.etp
+		SccLocalPath9 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection9 = TimeReport\\
+		SccProjectUniqueName10 = TimeReport\\WebServiceProjects\\WebServiceProjects.etp
+		SccProjectTopLevelParentUniqueName10 = TimeReport\\TimeReport.etp
+		SccLocalPath10 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection10 = TimeReport\\WebServiceProjects\\
+		SccProjectUniqueName11 = TimeReport\\WebUIProjects\\WebUIProjects.etp
+		SccProjectTopLevelParentUniqueName11 = TimeReport\\TimeReport.etp
+		SccLocalPath11 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection11 = TimeReport\\WebUIProjects\\
+		SccProjectUniqueName12 = TimeReport\\WinUIProjects\\WinUI\\WinUI.vbproj
+		SccProjectTopLevelParentUniqueName12 = TimeReport\\TimeReport.etp
+		SccLocalPath12 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection12 = TimeReport\\WinUIProjects\\WinUI\\
+		SccProjectUniqueName13 = TimeReport\\WinUIProjects\\WinUIProjects.etp
+		SccProjectTopLevelParentUniqueName13 = TimeReport\\TimeReport.etp
+		SccLocalPath13 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection13 = TimeReport\\WinUIProjects\\
+		SccProjectUniqueName14 = http://localhost/TimeReport/TimeReportWebUIProjects_WebUI/WebUI.vbproj
+		SccProjectTopLevelParentUniqueName14 = TimeReport\\TimeReport.etp
+		SccProjectName14 = \u0022$/TimeReport/TimeReport/WebUIProjects/WebUI\u0022,\u0020MLDAAAAA
+		SccLocalPath14 = ..\\..\\..\\..\\..\\..\\..\\inetpub\\wwwroot\\TimeReport\\TimeReportWebUIProjects_WebUI
+		CanCheckoutShared = false
+		SccProjectEnlistmentChoice14 = 2
+		SccProjectUniqueName15 = http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/WebService.vbproj
+		SccProjectTopLevelParentUniqueName15 = TimeReport\\TimeReport.etp
+		SccProjectName15 = \u0022$/TimeReport/TimeReport/WebServiceProjects/WebService\u0022,\u0020OLDAAAAA
+		SccLocalPath15 = ..\\..\\..\\..\\..\\..\\..\\inetpub\\wwwroot\\TimeReportWS\\TimeReportWebServiceProjects_WebService
+		CanCheckoutShared = false
+		SccProjectEnlistmentChoice15 = 2
+		SccProjectUniqueName16 = TimeReportWebSetup\\TimeReportWebSetup.vdproj
+		SccLocalPath16 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection16 = TimeReportWebSetup\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{099C52D5-31FA-48C6-B464-12854386CAC7}.Debug.ActiveCfg = Debug|.NET
+		{099C52D5-31FA-48C6-B464-12854386CAC7}.Debug.Build.0 = Debug|.NET
+		{099C52D5-31FA-48C6-B464-12854386CAC7}.Release.ActiveCfg = Release|.NET
+		{099C52D5-31FA-48C6-B464-12854386CAC7}.Release.Build.0 = Release|.NET
+		{135DC78B-992C-4230-9557-056D9B398BE6}.Debug.ActiveCfg = Debug|.NET
+		{135DC78B-992C-4230-9557-056D9B398BE6}.Debug.Build.0 = Debug|.NET
+		{135DC78B-992C-4230-9557-056D9B398BE6}.Release.ActiveCfg = Release|.NET
+		{135DC78B-992C-4230-9557-056D9B398BE6}.Release.Build.0 = Release|.NET
+		{6A58BA38-613A-490F-8687-F83B5C238E94}.Debug.ActiveCfg = Debug|.NET
+		{6A58BA38-613A-490F-8687-F83B5C238E94}.Debug.Build.0 = Debug|.NET
+		{6A58BA38-613A-490F-8687-F83B5C238E94}.Release.ActiveCfg = Release|.NET
+		{6A58BA38-613A-490F-8687-F83B5C238E94}.Release.Build.0 = Release|.NET
+		{CB9DE692-0C56-4629-9685-200C2474DC45}.Debug.ActiveCfg = Debug|.NET
+		{CB9DE692-0C56-4629-9685-200C2474DC45}.Debug.Build.0 = Debug|.NET
+		{CB9DE692-0C56-4629-9685-200C2474DC45}.Release.ActiveCfg = Release|.NET
+		{CB9DE692-0C56-4629-9685-200C2474DC45}.Release.Build.0 = Release|.NET
+		{E9F13D91-B68E-4D75-AC3C-F6713C2AB7CF}.Debug.ActiveCfg = Debug|.NET
+		{E9F13D91-B68E-4D75-AC3C-F6713C2AB7CF}.Debug.Build.0 = Debug|.NET
+		{E9F13D91-B68E-4D75-AC3C-F6713C2AB7CF}.Release.ActiveCfg = Release|.NET
+		{E9F13D91-B68E-4D75-AC3C-F6713C2AB7CF}.Release.Build.0 = Release|.NET
+		{8D2465C2-2CDB-416C-87BC-2379AE697FFC}.Debug.ActiveCfg = Debug|.NET
+		{8D2465C2-2CDB-416C-87BC-2379AE697FFC}.Debug.Build.0 = Debug|.NET
+		{8D2465C2-2CDB-416C-87BC-2379AE697FFC}.Release.ActiveCfg = Release|.NET
+		{8D2465C2-2CDB-416C-87BC-2379AE697FFC}.Release.Build.0 = Release|.NET
+		{80646B34-5545-420E-83A4-50B484370923}.Debug.ActiveCfg = Debug|.NET
+		{80646B34-5545-420E-83A4-50B484370923}.Release.ActiveCfg = Release|.NET
+		{D7CBD529-B004-45A2-A6C5-2C2391499224}.Debug.ActiveCfg = Debug
+		{D7CBD529-B004-45A2-A6C5-2C2391499224}.Release.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

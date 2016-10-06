@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://msdotnet.nu/WebService/TimeReport/TimeReportService" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:i0="http://tempuri.org/TimeReport.xsd" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://msdotnet.nu/WebService/TimeReport/TimeReportService" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <import namespace="http://tempuri.org/TimeReport.xsd" location="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/TimeReportWS.asmx?schema=dsTimeReport" />
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://msdotnet.nu/WebService/TimeReport/TimeReportService">
+      <s:import namespace="http://tempuri.org/TimeReport.xsd" />
+      <s:element name="SaveTimeReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/TimeReport.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveTimeReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveTimeReportResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimeReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WeekNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimeReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimeReportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/TimeReport.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="SaveTimeReportSoapIn">
+    <part name="parameters" element="s0:SaveTimeReport" />
+  </message>
+  <message name="SaveTimeReportSoapOut">
+    <part name="parameters" element="s0:SaveTimeReportResponse" />
+  </message>
+  <message name="GetTimeReportSoapIn">
+    <part name="parameters" element="s0:GetTimeReport" />
+  </message>
+  <message name="GetTimeReportSoapOut">
+    <part name="parameters" element="s0:GetTimeReportResponse" />
+  </message>
+  <portType name="TimeReportWSSoap">
+    <operation name="SaveTimeReport">
+      <documentation>Saves a timereport</documentation>
+      <input message="s0:SaveTimeReportSoapIn" />
+      <output message="s0:SaveTimeReportSoapOut" />
+    </operation>
+    <operation name="GetTimeReport">
+      <documentation>Gets a timereport</documentation>
+      <input message="s0:GetTimeReportSoapIn" />
+      <output message="s0:GetTimeReportSoapOut" />
+    </operation>
+  </portType>
+  <binding name="TimeReportWSSoap" type="s0:TimeReportWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="SaveTimeReport">
+      <soap:operation soapAction="http://msdotnet.nu/WebService/TimeReport/TimeReportService/SaveTimeReport" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetTimeReport">
+      <soap:operation soapAction="http://msdotnet.nu/WebService/TimeReport/TimeReportService/GetTimeReport" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TimeReportWS">
+    <port name="TimeReportWSSoap" binding="s0:TimeReportWSSoap">
+      <soap:address location="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/TimeReportWS.asmx" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<EFPROJECT>
+    <GENERAL>
+        <BANNER>Microsoft Visual Studio Distributed Application Template FILE</BANNER>
+        <VERSION>1.00</VERSION>
+        <SourceControlSettings>
+            <ProjectName>"$/TimeReport", LKDAAAAA</ProjectName>
+            <AuxPath></AuxPath>
+            <LocalPath>..\..</LocalPath>
+            <Provider>MSSCCI:Microsoft Visual SourceSafe</Provider>
+        </SourceControlSettings>
+        <Views>
+            <ProjectExplorer>
+                <File>BusinessFacade\BusinessFacade.vbproj</File>
+            </ProjectExplorer>
+        </Views>
+        <References>
+            <Reference>
+                <FILE>BusinessFacade\BusinessFacade.vbproj</FILE>
+                <GUIDPROJECTID>{099C52D5-31FA-48C6-B464-12854386CAC7}</GUIDPROJECTID>
+            </Reference>
+        </References>
+    </GENERAL>
+    <GLOBALS>
+        <GLOBALENTRY>
+            <NAME>TDLFILE</NAME>
+            <VALUE>DAP.tdl</VALUE>
+        </GLOBALENTRY>
+        <GLOBALENTRY>
+            <NAME>TDLELEMENTTYPE</NAME>
+            <VALUE>BusinessFacadeProjects</VALUE>
+        </GLOBALENTRY>
+    </GLOBALS>
+</EFPROJECT>

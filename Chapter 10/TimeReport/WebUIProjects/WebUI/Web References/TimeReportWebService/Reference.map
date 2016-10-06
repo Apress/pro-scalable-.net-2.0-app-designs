@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/TimeReport.asmx?schema=dsWeekReports" filename="dsWeekReports.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/TimeReport.asmx?schema=dsOngoingReports" filename="dsOngoingReports.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/TimeReport.asmx?schema=dsTimeReport" filename="dsTimeReport.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/TimeReport.asmx?wsdl" filename="TimeReport.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/TimeReport.asmx?disco" filename="TimeReport.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/TimeReportWS/TimeReportWebServiceProjects_WebService/TimeReport.asmx?schema=dsProjects" filename="dsProjects.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

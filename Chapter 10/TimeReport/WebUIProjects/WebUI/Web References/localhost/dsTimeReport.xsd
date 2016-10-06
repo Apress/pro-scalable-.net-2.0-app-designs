@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="http://tempuri.org/TimeReport.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://tempuri.org/TimeReport.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/TimeReport.xsd" id="dsTimeReport" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" name="dsTimeReport">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="TimeReportHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:string" />
+              <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+              <xs:element name="EndDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="WeekNo" type="xs:long" />
+              <xs:element minOccurs="0" name="ExpectedHours" type="xs:long" />
+              <xs:element minOccurs="0" name="Comment" type="xs:string" />
+              <xs:element minOccurs="0" name="Ongoing" type="xs:string" />
+              <xs:element minOccurs="0" name="Submitted" type="xs:string" />
+              <xs:element minOccurs="0" name="Locked" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TimeReportLines">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TimeReportId" type="xs:string" />
+              <xs:element name="Id" type="xs:string" />
+              <xs:element minOccurs="0" name="ProjectNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="NumberOfHours" type="xs:long" />
+              <xs:element minOccurs="0" name="TypeOfTime" type="xs:string" />
+              <xs:element minOccurs="0" name="Comment" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="TimeReportKey1">
+      <xs:selector xpath=".//mstns:TimeReportHeader" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="TimeReportKey2">
+      <xs:selector xpath=".//mstns:TimeReportLines" />
+      <xs:field xpath="mstns:TimeReportId" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:keyref name="TimeReportTimeReportLine" refer="mstns:TimeReportKey1">
+      <xs:selector xpath=".//mstns:TimeReportLines" />
+      <xs:field xpath="mstns:TimeReportId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

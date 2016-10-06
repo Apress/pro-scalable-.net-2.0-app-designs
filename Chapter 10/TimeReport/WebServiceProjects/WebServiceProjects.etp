@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<EFPROJECT>
+    <GENERAL>
+        <BANNER>Microsoft Visual Studio Distributed Application Template FILE</BANNER>
+        <VERSION>1.00</VERSION>
+        <SourceControlSettings>
+            <ProjectName>"$/TimeReport", LKDAAAAA</ProjectName>
+            <AuxPath></AuxPath>
+            <LocalPath>..\..</LocalPath>
+            <Provider>MSSCCI:Microsoft Visual SourceSafe</Provider>
+        </SourceControlSettings>
+        <Views>
+            <ProjectExplorer>
+            </ProjectExplorer>
+        </Views>
+        <References>
+        </References>
+    </GENERAL>
+    <GLOBALS>
+        <GLOBALENTRY>
+            <NAME>TDLFILE</NAME>
+            <VALUE>DAP.tdl</VALUE>
+        </GLOBALENTRY>
+        <GLOBALENTRY>
+            <NAME>TDLELEMENTTYPE</NAME>
+            <VALUE>WebServiceProjects</VALUE>
+        </GLOBALENTRY>
+    </GLOBALS>
+</EFPROJECT>

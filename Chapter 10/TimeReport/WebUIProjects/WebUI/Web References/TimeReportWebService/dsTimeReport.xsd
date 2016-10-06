@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="http://tempuri.org/TimeReport.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://tempuri.org/TimeReport.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/TimeReport.xsd" id="dsTimeReport" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" name="dsTimeReport">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="UserReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserReportsID" type="xs:long" />
+              <xs:element name="UserID" type="xs:long" />
+              <xs:element minOccurs="0" name="ReportStatusID" type="xs:long" />
+              <xs:element name="WeekReportID" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportLine">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReportLineID" type="xs:long" />
+              <xs:element name="ReportID" type="xs:long" />
+              <xs:element name="ProjectID" type="xs:long" />
+              <xs:element name="TimeTypeID" type="xs:int" />
+              <xs:element minOccurs="0" name="Description" type="xs:string" />
+              <xs:element minOccurs="0" name="ReportLineStatusID" type="xs:long" />
+              <xs:element name="ReportedHours" type="xs:int" />
+              <xs:element name="ReportLineDate" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportStatus">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReportStatusID" type="xs:long" />
+              <xs:element name="ReportStatusName" type="xs:string" />
+              <xs:element minOccurs="0" name="Description" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="dsTimeReportKey1">
+      <xs:selector xpath=".//mstns:UserReport" />
+      <xs:field xpath="mstns:UserReportsID" />
+    </xs:unique>
+    <xs:unique msdata:PrimaryKey="true" name="dsTimeReportKey2">
+      <xs:selector xpath=".//mstns:ReportLine" />
+      <xs:field xpath="mstns:ReportLineID" />
+    </xs:unique>
+    <xs:unique msdata:PrimaryKey="true" name="dsTimeReportKey3">
+      <xs:selector xpath=".//mstns:ReportStatus" />
+      <xs:field xpath="mstns:ReportStatusID" />
+    </xs:unique>
+    <xs:keyref name="UserReportReportLine" refer="mstns:dsTimeReportKey1">
+      <xs:selector xpath=".//mstns:ReportLine" />
+      <xs:field xpath="mstns:ReportID" />
+    </xs:keyref>
+    <xs:keyref name="ReportStatusUserReport" refer="mstns:dsTimeReportKey3">
+      <xs:selector xpath=".//mstns:UserReport" />
+      <xs:field xpath="mstns:ReportStatusID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

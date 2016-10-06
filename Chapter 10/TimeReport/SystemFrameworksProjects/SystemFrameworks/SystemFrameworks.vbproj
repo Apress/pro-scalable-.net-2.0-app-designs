@@ -1,0 +1,181 @@
+<VisualStudioProject>
+    <VisualBasic
+        OwnerKey = "{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}"
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{CB9DE692-0C56-4629-9685-200C2474DC45}"
+        SccProjectName = '"$/TimeReport", LKDAAAAA'
+        SccLocalPath = "..\..\.."
+        SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "SystemFrameworks"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "SystemFrameworks"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Diagnostics" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DsOngoingReports.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsOngoingReports1.vb"
+                />
+                <File
+                    RelPath = "DsOngoingReports.xsx"
+                    DependentUpon = "DsOngoingReports.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsOngoingReports1.vb"
+                    DependentUpon = "DsOngoingReports.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsProjects.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsProjects1.vb"
+                />
+                <File
+                    RelPath = "DsProjects.xsx"
+                    DependentUpon = "DsProjects.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsProjects1.vb"
+                    DependentUpon = "DsProjects.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsTimeReport.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsTimeReport1.vb"
+                />
+                <File
+                    RelPath = "DsTimeReport.xsx"
+                    DependentUpon = "DsTimeReport.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsTimeReport1.vb"
+                    DependentUpon = "DsTimeReport.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsWeekReports.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsWeekReports1.vb"
+                />
+                <File
+                    RelPath = "DsWeekReports.xsx"
+                    DependentUpon = "DsWeekReports.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsWeekReports1.vb"
+                    DependentUpon = "DsWeekReports.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "ITimeReportAsync.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+        <UserProperties
+            TDLFILE = "DAP.tdl"
+            TDLELEMENTTYPE = "System"
+        />
+    </VisualBasic>
+</VisualStudioProject>
+
